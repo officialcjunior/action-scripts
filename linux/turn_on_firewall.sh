@@ -1,0 +1,1 @@
+echo "script turning on firewall"

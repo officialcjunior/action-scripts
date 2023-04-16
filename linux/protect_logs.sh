@@ -1,0 +1,1 @@
+echo "protecting logs"
