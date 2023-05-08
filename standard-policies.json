@@ -22,6 +22,10 @@
 				"linux": "https://github.com/officialcjunior/action-scripts/raw/master/linux/run-update.sh",
 				"windows": "https://github.com/officialcjunior/action-scripts/raw/master/windows/turn_on_win_update.ps1"
 			}
+		},
+		{
+			"control_id": "A12.1.2.3 – Disk Encryption Check",
+			"predicate": "system__disk__encryption_enabled == 1"
 		}
 	]
 }
