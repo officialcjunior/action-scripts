@@ -1,2 +1,1 @@
-echo "running chill.sh"
-
+exit 0
