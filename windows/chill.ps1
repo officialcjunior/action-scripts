@@ -1,1 +1,1 @@
-Write-Output "Chilling"
+exit 0
