@@ -20,7 +20,13 @@
 		},
 		{
 			"control_id": "A12.1.2.3 – Disk Encryption Check",
-			"predicate": "system__disk__encryption_enabled == 1"
+			"predicate": "system__disk__encryption_enabled == 1",
+			"action_on_true": {
+				"class": "task",
+				"interval": "PT8H",
+				"linux": "https://github.com/officialcjunior/action-scripts/raw/master/linux/chill.sh",
+				"windows": "https://github.com/officialcjunior/action-scripts/raw/master/windows/chill.ps1"
+			}
 		}
 	]
 }
