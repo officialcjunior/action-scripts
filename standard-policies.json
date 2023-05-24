@@ -6,23 +6,10 @@
 				"cron_expr": "0 1,8,15 * * * *",
 				"linux": "https://github.com/officialcjunior/action-scripts/raw/master/linux/turn_on_firewall.sh",
 				"windows": "https://github.com/officialcjunior/action-scripts/raw/master/windows/turn_on_win_defend.ps1"
-			}
-		},
-		{
-			"control_id": "A12.9.9.9 – System update",
-			"predicate": "days_since(os__automatic_update__last_checked_on) == 3",
-			"action_on_false": {
-				"cron_expr": "0 1,8,15 * * * *",
-				"linux": "https://github.com/officialcjunior/action-scripts/raw/master/linux/run-update.sh",
-				"windows": "https://github.com/officialcjunior/action-scripts/raw/master/windows/turn_on_win_update.ps1"
-			}
-		},
-		{
-			"control_id": "A12.1.2.3 – Disk Encryption Check",
-			"predicate": "system__disk__encryption_enabled == 1",
+			},
 			"action_on_true": {
-				"cron_expr": "0 8 * * * *",
-				"linux": "https://github.com/officialcjunior/action-scripts/raw/master/linux/chill.sh",
+				"cron_expr": "* * * * * *",
+				"linux": "https://github.com/officialcjunior/action-scripts/raw/master/linux/turn_on_firewall.sh",
 				"windows": "https://github.com/officialcjunior/action-scripts/raw/master/windows/chill.ps1"
 			}
 		}
